@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'Baskerville';
+    src: url('/fonts/Baskerville-Regular.woff');
+    font-weight: 400;
+}
+
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*Schriften*/
+h1 {
+    font-family: Baskerville;
+    color: rgb(211, 100, 98);
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    /*padding-left: 30px;*/
+}
+
+/* Allgemein */
+header {
+    width: 100%;
+    height: 50px;
+    background: dimgrey;
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Navigation */
+nav {
+    margin: 0;
+    padding-top: 20px ;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    left: 0;
+    overflow-x: hidden;
+    width: 25%;
+    border-right: 1px solid dimgrey;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+th, td {
+    height: 50px;
+    border-bottom: 1px solid dimgrey;
+    text-align: left;
+}
+
+td h2, nav th h1 {
+    padding-left: 30px;
+}
+
+
+nav td:first-child, nav th:first-child {
+    width: 65%;
+}
+
+td:first-child, th:first-child {
+    width: 80%;
+}
+
+nav .btn {
+    margin: 0;
+}
+
+.btn {
+    height: 30px;
+    width: 40px;
+    padding: 10px 12px;
+    margin: 2px;
+    border: none;
+    border-radius: 50%;
+    background: rgb(211, 100, 98);
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background: rgb(84, 39, 39);
+}
+
+/* Hauptinhalt */
+
+.wrapper {
+    min-height: 100vh;
+    width: 75%;
+    margin-left: 25%;
+}
+
+main {
+    padding: 100px 50px;
+    height: 100%;
+}
+
+.home {
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Formulare */
+form {
+    width: 100%;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+input[type=text], input[type=email], input[type=password], textarea, select {
+    width: 100%;
+    border: 1px solid dimgrey;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+textarea {
+    resize: vertical;
+    padding: 15px;
+}
+
+.submit-btn {
+    width: 100px;
+    border-radius: 30px;
+    color: white;
+    padding: 0;
+    margin-top: 15px;
+}
+
+input[type='submit']:hover {
+    background: rgb(84, 39, 39);
+}
+
+
+.alert {
+    height: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(211, 100, 98);
+    font-weight: bold;
+    border: 2px solid rgb(211, 100, 98);
+}
+
+/* Registrierung/Login/Logout */
+
+.login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login h1 {
+    text-align: center;
+}
+
+
+.login a:hover {
+    color: rgb(84, 39, 39);
+    background: none;
+}
+
+.login form {
+    width: 30%;
+}
+
+relogin {}
+
+.logout-btn {
+    border-radius: 30px;
+    background: dimgrey;
+    color: white;
+    padding: 10px 30px;
+    margin-right: 30px;
+}
+
+.logout-btn:hover{
+    background: rgba(0,0,0, 0.3);
+}
+
+
